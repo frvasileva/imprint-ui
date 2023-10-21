@@ -33,12 +33,32 @@ export const mockChallanges: ChallangeItemDto[] = [
   },
   {
     id: "4",
-    title: "Eat home",
+    title: "Family challenge",
     description:
-      "Nulla feugiat velit et aliquet egestas. Integer sit amet iaculis arcu, quis congue dui. Etiam elit augue, volutpat at fermentum a, facilisis et ipsum. Curabitur ligula sapien, auctor nec dignissim ac, sollicitudin a est. Vestib",
+      "Take a challenge with your family, earn additional carbon points together and donate for a sustainable tomorrow.",
     startDate: new Date("01/12/2023"),
     expirationDate: new Date("31/12/2024"),
     type: "group",
-    coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/challenge_local_products.jpg",
+    coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/challenges/family.png",
+  },
+  {
+    id: "5",
+    title: "Friend challenge",
+    description:
+      "Play as a team and receive additional carbon points for each given task. Donate your earnings to a cause of your choice.",
+    startDate: new Date("01/12/2023"),
+    expirationDate: new Date("31/12/2024"),
+    type: "group",
+    coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/challenges/friends.png",
+  },
+  {
+    id: "6",
+    title: "Community challenge",
+    description:
+      "Race, win and earn - share your family or group achievements with the community and see how you rank. Win up to 100 additional carbon points and donate as a team",
+    startDate: new Date("01/12/2023"),
+    expirationDate: new Date("31/12/2024"),
+    type: "group",
+    coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/challenges/community.png",
   },
 ];
