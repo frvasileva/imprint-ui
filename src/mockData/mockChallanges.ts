@@ -9,7 +9,7 @@ export const mockChallanges: ChallangeItemDto[] = [
     startDate: new Date("01/12/2023"),
     expirationDate: new Date("31/12/2023"),
     type: "personal",
-    coverPhoto: "challenge_local_products.jpg",
+    coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/challenge_public_transport.png",
   },
   {
     id: "2",
@@ -19,7 +19,7 @@ export const mockChallanges: ChallangeItemDto[] = [
     startDate: new Date("01/12/2023"),
     expirationDate: new Date("31/12/2023"),
     type: "personal",
-    coverPhoto: "./../../static-content/images/forest-background.jpg",
+    coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/challenge_local_products.jpg",
   },
   {
     id: "3",
@@ -29,16 +29,16 @@ export const mockChallanges: ChallangeItemDto[] = [
     startDate: new Date("01/12/2023"),
     expirationDate: new Date("31/12/2024"),
     type: "personal",
-    coverPhoto: "./../../static-content/images/forest-background.jpg",
+    coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/challenge_sustainable_products.jpg",
   },
   {
     id: "4",
-    title: "Eat less!",
+    title: "Eat home",
     description:
       "Nulla feugiat velit et aliquet egestas. Integer sit amet iaculis arcu, quis congue dui. Etiam elit augue, volutpat at fermentum a, facilisis et ipsum. Curabitur ligula sapien, auctor nec dignissim ac, sollicitudin a est. Vestib",
     startDate: new Date("01/12/2023"),
     expirationDate: new Date("31/12/2024"),
     type: "group",
-    coverPhoto: "./../../static-content/images/forest-background.jpg",
+    coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/challenge_local_products.jpg",
   },
 ];

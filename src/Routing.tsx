@@ -9,6 +9,7 @@ import ChallangesList from "./components/Challanges/ChallangesList";
 import ChallangeDetails from "./components/Challanges/ChallengeDetails";
 import UserDashboard from "./components/user/UserDashboardPage/UserDashboard";
 import { InitiativesList } from "./components/Initiatives/InitiativesList";
+import InitiativeDetails from "./components/Initiatives/InitiativeDetails";
 
 export const Routing = () => {
     return (<Routes>
@@ -16,7 +17,7 @@ export const Routing = () => {
             <Route element={<Home />} index />
             <Route element={<UserDashboard />} path="user-dashboard" />
             <Route path="initiatives" element={<InitiativesList />} />
-            <Route path="initiatives/details/:id" element={<InitiativesList />} />
+            <Route path="initiatives/details/:id" element={<InitiativeDetails />} />
             <Route path="challenges" element={<ChallangesList />} />
             <Route path="challenges/details/:id" element={<ChallangeDetails />} />
             <Route path="transactions" element={<TransactionsPage />} />
