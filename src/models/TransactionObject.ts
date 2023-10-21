@@ -1,14 +1,7 @@
-// export default interface TransactionItemDto {
-//   id: string;
-//   date: Date;
-//   merchant: string;
-//   description: string;
-//   amount: number;
-//   type: "incoming" | "outgoing";
-// }
-
 export default interface TransactionObject {
   id: string;
+  type: "incoming" | "outgoing";
+  createdOn: Date;
   footPrintPoints: number;
   invoiceRows: InvoiceRows[];
 }

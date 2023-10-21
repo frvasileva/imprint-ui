@@ -1,5 +1,5 @@
 import TransactionItemDetailsDto from "../models/TransactionItemDetailsDto";
-import TransactionObject from "../models/TransactionItemDto";
+import TransactionObject from "../models/TransactionObject";
 import axiosClient from "./axiosClient";
 import ResponseErrors from "./models/ResponseErrors";
 import { API_BASE_URL } from "./settings";
@@ -32,7 +32,7 @@ export const API = {
     return response;
   },
 
-  fetchTransactions: async function (): Promise<TransactionObject[] | any> {
+  fetchTransactions: async function (): Promise<any> {
     fetch(API_BASE_URL + "/trans/all/list")
       .then((response) => {
         return response.json();
@@ -40,37 +40,19 @@ export const API = {
       .then((data: any) => {
         console.log("then data", data);
 
-        const mappedItem = data.map((item: any) => {
+        const mappedItem = data.map((item: TransactionObject) => {
           const itm = {
             id: item.id,
+            type: "incoming",
+            createdOn: new Date(),
             footPrintPoints: item.footPrintPoints,
             invoiceRows: item.invoiceRows,
           } as TransactionObject;
 
           return itm;
         });
-
-        console.log("mappedItem", mappedItem);
-        // const item = {
-        //   id: data.id,
-        //   transaction: {
-        //     id: data.id,
-        //   },
-        //   invoiceDetails: {
-        //     productList: [
-        //       {
-        //         id: data.invoiceRows.product.id,
-        //         co2eTotal: data.product.id,
-        //         name: data.product.name,
-        //         singlePrice: data.product.singlePrice,
-        //         sector: "Sector",
-        //         category: "Category",
-        //       },
-        //     ],
-        //   },
-        // };
-
-        // console.log("mapped item", item);
+        return mappedItem;
       });
+
   },
 };

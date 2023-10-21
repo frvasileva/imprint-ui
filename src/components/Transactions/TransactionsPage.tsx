@@ -1,29 +1,50 @@
 import { useEffect, useState } from "react";
-import { mockTransactions } from "../../mockData/mockedTransactions";
 import TransactionItem from "./TransactionItem/TransactionItem";
-import { API } from "../../api/API";
+import TransactionObject from "../../models/TransactionObject";
+import { API_BASE_URL } from "../../api/settings";
 
 export const TransactionsPage = () => {
 
-    const [data, getData] = useState([]);
+    const [data, setData] = useState([] as TransactionObject[]);
+    const [isLoading, setIsLoading] = useState([] as TransactionObject[]);
     useEffect(() => {
-        const result = API.fetchTransactions();
+        fetch(API_BASE_URL + "/trans/all/list")
+            .then((response) => {
+                return response.json();
+            })
+            .then((data: any) => {
+                console.log("then data", data);
 
-        console.log(result);
-    });
+                const mappedItem = data.map((item: TransactionObject) => {
+                    const itm = {
+                        id: item.id,
+                        type: "incoming",
+                        createdOn: new Date(),
+                        footPrintPoints: item.footPrintPoints,
+                        invoiceRows: item.invoiceRows,
+                    } as TransactionObject;
 
-    return (
-        <div className="container register-wrapper">
-            <div className="row">
-                <div className="col-12">
-                    <h1 className="page-title">Transactions:</h1>
-                    {
-                        mockTransactions.map((item: any) => {
-                            return (<TransactionItem transaction={item} key={item.description} />)
-                        })
-                    }
+                    return itm;
+                });
+                setData(mappedItem);
+            });
+    }, []);
+
+    if (data.length === 0 || typeof data === "undefined")
+        return (<>Loading</>)
+    else
+        return (
+            <div className="container register-wrapper">
+                <div className="row">
+                    <div className="col-12">
+                        <h1 className="page-title">Transactions:</h1>
+                        {
+                            data.map((item: TransactionObject) => {
+                                return (<TransactionItem transaction={item} key={item.id} />)
+                            })
+                        }
+                    </div>
                 </div>
             </div>
-        </div>
-    );
+        );
 };
