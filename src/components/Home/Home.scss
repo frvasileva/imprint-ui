@@ -1,0 +1,23 @@
+@import "./../../styles/variables.scss";
+
+.welcome-section {
+  background-image: url("../../static-content/images/tree.avif");
+  background-size: contain;
+
+  .info-section-wrapper-hello {
+    background-color: hsl(0deg 0% 100% / 95%);
+    border-radius: 5px;
+    padding: 50px;
+    font-size: 20px;
+  }
+}
+
+.action-section {
+  background-color: $sad-green;
+}
+
+.hero-image {
+  width: 70vw;
+  display: block;
+  margin: 0 auto;
+}

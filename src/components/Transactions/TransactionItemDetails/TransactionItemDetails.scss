@@ -1,0 +1,42 @@
+@import "../../../styles/variables.scss";
+
+.transaction-details-wrapper {
+  margin-top: 30px;
+
+  .summary-wrapper {
+    border-radius: 0;
+    padding: 30px;
+    margin: 20px auto 50px;
+
+    .total-amount {
+      font-size: 40px;
+    }
+
+    &.carbon-footprint-type {
+      &.low {
+        background-color: #9cb544;
+        border-right: 15px solid #72852d;
+      }
+
+      &.medium {
+        background-color: #ffa50082;
+        border-right: 15px solid orange;
+      }
+
+      &.high {
+        background-color: #f39b9b;
+        border-right: 15px solid red;
+      }
+    }
+  }
+  &.incoming-type {
+  }
+
+  &.outgoing-type {
+  }
+
+  .merchant-name {
+    font-size: 30px;
+    display: block;
+  }
+}

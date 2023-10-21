@@ -1,0 +1,8 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./styles/variables.scss";
+@import "./styles/layout.scss";
+@import "./styles/bootstrap-overwrites.scss";
+
+body{
+    background-color: #fbfbfb;
+}

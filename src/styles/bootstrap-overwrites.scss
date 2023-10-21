@@ -1,0 +1,40 @@
+@import "../styles/variables.scss";
+
+.bg-primary {
+  background-color: $primary-green !important;
+}
+
+.nav-link {
+  color: white;
+  text-transform: uppercase;
+}
+
+.form-control {
+  border-radius: 0;
+  border-right: 5px solid $primary-green;
+}
+
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.accordion-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px !important;
+}
+
+.accordion-button:not(.collapsed) {
+  // color: gray !important;
+  background-color: rgb(205, 235, 194) !important;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0
+    var(--bs-accordion-border-color);
+}
