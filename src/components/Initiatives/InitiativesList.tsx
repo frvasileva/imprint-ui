@@ -16,7 +16,7 @@ export const InitiativesList = () => {
                                     <div className="col-4">
                                         <InitiativeItem initiative={item} key={item.id} />
                                     </div>)
-                        })}
+                            })}
                     </div>
 
 
