@@ -30,6 +30,9 @@ export interface Product {
   id: string;
   name: string;
   category: ProductCategory;
+  co2eTotal?: number;
+  sector?: string;
+  singlePrice?: number;
 }
 
 export interface ProductCategory {

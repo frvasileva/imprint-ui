@@ -134,6 +134,7 @@ export const mockTransactions: TransactionItemDetailsDto[] = [
             id: "35435",
             name: "Shirt",
             category: { id: "1", name: "clothes" },
+            
           },
           transactionDetails: {
             amount: 45,

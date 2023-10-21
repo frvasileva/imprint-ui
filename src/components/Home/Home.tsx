@@ -3,11 +3,7 @@ import "./Home.scss";
 import { API } from "../../api/API";
 
 export const Home = () => {
-    // const [data, getData] = useState([]);
-    // useEffect(() => {
-    //     const result = API.FetchCardList();
-    //     console.log(result);
-    // });
+   
     return (<>
         <div className="container-fluid info-section-wrapper welcome-section">
             <div className="container">
