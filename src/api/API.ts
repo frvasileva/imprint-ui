@@ -40,25 +40,12 @@ export const API = {
       .then((data: any) => {
         console.log("then data", data);
 
-        const mappedItem = data.map((item: TransactionObject) => {
+        const mappedItem = data.map((item: any) => {
           const itm = {
             id: item.id,
-            transaction: {
-              id: item.id,
-            },
-            // invoiceDetails: {
-            //   productList: [
-            //     {
-            //       id: item.invoiceRows.product.id,
-            //       co2eTotal: item.product.id,
-            //       name: item.product.name,
-            //       singlePrice: item.product.singlePrice,
-            //       sector: "Sector",
-            //       category: "Category",
-            //     },
-            //   ],
-            // },
-          };
+            footPrintPoints: item.footPrintPoints,
+            invoiceRows: item.invoiceRows,
+          } as TransactionObject;
 
           return itm;
         });

@@ -10,7 +10,7 @@
 export default interface TransactionObject {
   id: string;
   footPrintPoints: number;
-  invoiceRows: [];
+  invoiceRows: InvoiceRows[];
 }
 
 export interface InvoiceRows {
