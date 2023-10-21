@@ -8,7 +8,7 @@ export const mockInitiatives: InitiativesCategory[] = [
     startDate: new Date("01/12/2023"),
     expirationDate: new Date("31/12/2023"),
     type: "cause",
-    coverPhoto: "challenge_local_products.jpg",
+    coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/initiatives/supportCause.png",
 
     initiatives: [
       {
@@ -19,7 +19,7 @@ export const mockInitiatives: InitiativesCategory[] = [
         startDate: new Date("01/12/2023"),
         expirationDate: new Date("31/12/2023"),
         type: "cause",
-        coverPhoto: "challenge_local_products.jpg",
+        coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/socialCauses/teddyBear.png",
         location: "Bulgaria",
       },
       {
@@ -30,7 +30,7 @@ export const mockInitiatives: InitiativesCategory[] = [
         startDate: new Date("01/12/2023"),
         expirationDate: new Date("31/12/2023"),
         type: "cause",
-        coverPhoto: "challenge_local_products.jpg",
+        coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/socialCauses/teamSeas.png",
         location: "Worldwide",
       },
       {
@@ -41,7 +41,7 @@ export const mockInitiatives: InitiativesCategory[] = [
         startDate: new Date("01/12/2023"),
         expirationDate: new Date("31/12/2023"),
         type: "cause",
-        coverPhoto: "challenge_local_products.jpg",
+        coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/socialCauses/animalRescueInternational.jpg",
         location: "Worldwide",
       },
     ],
@@ -53,18 +53,40 @@ export const mockInitiatives: InitiativesCategory[] = [
     startDate: new Date("01/12/2023"),
     expirationDate: new Date("31/12/2023"),
     type: "sustainablity",
-    coverPhoto: "challenge_local_products.jpg",
+    coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/initiatives/emergingBusiness.png",
     initiatives: [
       {
         id: "1",
-        title: "Use subway more than 10 times per month",
+        title: "Support women entrepreneurs",
         description:
-          "Nulla feugiat velit et aliquet egestas. Integer sit amet iaculis arcu, quis congue dui. Etiam elit augue, volutpat at fermentum a, facilisis et ipsum. Curabitur ligula sapien, ",
+          "Empower women in Africa, sustain and grow successful businesses, so they can live to their full potential. ",
         startDate: new Date("01/12/2023"),
         expirationDate: new Date("31/12/2023"),
         type: "cause",
-        coverPhoto: "challenge_local_products.jpg",
-        location: "",
+        coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/emergingBusiness/womenOwnedBusiness.jpg",
+        location: "Africa",
+      },
+      {
+        id: "2",
+        title: "Belgibaev’s craftsmanship",
+        description:
+          "Family handmade and organic craftsmanship works from local products since 1992. ",
+        startDate: new Date("01/12/2023"),
+        expirationDate: new Date("31/12/2023"),
+        type: "cause",
+        coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/emergingBusiness/handmanKazakstan.jpg",
+        location: "Kazakhstan",
+      },
+      {
+        id: "3",
+        title: "Mandu House",
+        description:
+          "A small family owned restaurant for traditional mongolian dumplings. ",
+        startDate: new Date("01/12/2023"),
+        expirationDate: new Date("31/12/2023"),
+        type: "cause",
+        coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/emergingBusiness/mongolianTraditionalMeal.jpg",
+        location: "Kazakhstan",
       },
     ],
   },
@@ -75,18 +97,40 @@ export const mockInitiatives: InitiativesCategory[] = [
     startDate: new Date("01/12/2023"),
     expirationDate: new Date("31/12/2023"),
     type: "sustainablity",
-    coverPhoto: "challenge_local_products.jpg",
+    coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/initiatives/education.jpg",
     initiatives: [
       {
         id: "1",
-        title: "Use subway more than 10 times per month",
+        title: "Access Drum",
         description:
-          "Nulla feugiat velit et aliquet egestas. Integer sit amet iaculis arcu, quis congue dui. Etiam elit augue, volutpat at fermentum a, facilisis et ipsum. Curabitur ligula sapien, ",
+          "Access Drum is a startup organising courses for software testing, designed specifically for blind people who use a screen reader.",
         startDate: new Date("01/12/2023"),
         expirationDate: new Date("31/12/2023"),
         type: "cause",
-        coverPhoto: "challenge_local_products.jpg",
-        location: "",
+        coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/education/accessDrum.png",
+        location: "Bulgaria",
+      },
+      {
+        id: "2",
+        title: "Village school in Oryahovo",
+        description:
+          "A renovation project for an elementary school that has sat vacant since it closed doors in 1998. The building can accommodate up to 100 students who are currently commuting 40 km a day to attend school in the neighbouring village. ",
+        startDate: new Date("01/12/2023"),
+        expirationDate: new Date("31/12/2023"),
+        type: "cause",
+        coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/education/school.jpg",
+        location: "Bulgaria",
+      },
+      {
+        id: "3",
+        title: "Green Bus",
+        description:
+          "Support the funding of an electrical school bus to transport students to and from schools in various villages in one of the poorest regions in Chile. ",
+        startDate: new Date("01/12/2023"),
+        expirationDate: new Date("31/12/2023"),
+        type: "cause",
+        coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/education/greenBus.jpg",
+        location: "Chile",
       },
     ],
   },

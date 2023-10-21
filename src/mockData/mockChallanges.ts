@@ -3,9 +3,9 @@ import ChallangeItemDto from "../models/ChallangeItemDto";
 export const mockChallanges: ChallangeItemDto[] = [
   {
     id: "1",
-    title: "Use subway more than 10 times per month",
+    title: "Use public transport",
     description:
-      "Nulla feugiat velit et aliquet egestas. Integer sit amet iaculis arcu, quis congue dui. Etiam elit augue, volutpat at fermentum a, facilisis et ipsum. Curabitur ligula sapien, ",
+      "Use public transportation at least 10 times for the month and get additional carbon points and a badge to share with your friends and the Imprim community.",
     startDate: new Date("01/12/2023"),
     expirationDate: new Date("31/12/2023"),
     type: "personal",
@@ -15,7 +15,7 @@ export const mockChallanges: ChallangeItemDto[] = [
     id: "2",
     title: "Shop local products",
     description:
-      "Nulla feugiat velit et aliquet egestas. Integer sit amet iaculis arcu, quis congue dui. Etiam elit augue, volutpat at fermentum a, facilisis et ipsum. Curabitur ligula sapien, auctor nec dignissim ac, sollicitudin a est. Vestib",
+      "Purchase products grown locally for one month and get additional carbon points and a special badge to share with your friends and the Imprim community!",
     startDate: new Date("01/12/2023"),
     expirationDate: new Date("31/12/2023"),
     type: "personal",
@@ -23,9 +23,9 @@ export const mockChallanges: ChallangeItemDto[] = [
   },
   {
     id: "3",
-    title: "Buy more than 100 sustainable products",
+    title: "Buy sustainable products",
     description:
-      "Nulla feugiat velit et aliquet egestas. Integer sit amet iaculis arcu, quis congue dui. Etiam elit augue, volutpat at fermentum a, facilisis et ipsum. Curabitur ligula sapien, auctor nec dignissim ac, sollicitudin a est. Vestib",
+      "Shop organic-certified produce from stores near you for 10 consecutive days and earn extra carbon points! Share your success with Imprint friends and community!",
     startDate: new Date("01/12/2023"),
     expirationDate: new Date("31/12/2024"),
     type: "personal",

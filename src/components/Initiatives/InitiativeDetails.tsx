@@ -34,7 +34,7 @@ export default function InitiativeDetails() {
                     <div className="col-12">
                         {item.initiatives.map((item: InitiativesItemDto) => {
                             return (<>
-                                <img src={item.coverPhoto} alt="alt text" />
+                                <img src={item.coverPhoto} alt="alt text" width="300px"/>
                                 {item.title}
                                 {item.description}
                             </>)
