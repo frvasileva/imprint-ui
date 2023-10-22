@@ -3,6 +3,8 @@ export default interface TransactionObject {
   type: "incoming" | "outgoing";
   createdOn: Date;
   footPrintPoints: number;
+  vendor: string;
+  totalPrice: string;
   invoiceRows: InvoiceRows[];
 }
 
