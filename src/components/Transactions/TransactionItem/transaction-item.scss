@@ -29,12 +29,13 @@
   .transaction-description {
     font-size: 24px;
     line-height: 20px;
+    font-weight: 600;
   }
 
   .transaction-date {
     font-size: 16px;
   }
-  
+
   &.outgoing .transaction-amount {
     color: red;
   }
@@ -43,11 +44,27 @@
     color: green;
   }
 
+  .metrics-wrapper {
+    text-align: right;
+    display: block;
+  }
+
+  .transaction-C20 {
+    font-size: 26px;
+    display: block;
+  }
+
   .transaction-amount {
     font-size: 26px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    height: 100%;
+    display: block;
   }
+}
+
+.transaction-merchant-details {
+  margin-top: 20px;
+}
+
+.suffix-points {
+  font-size: 12px;
+  font-weight: 600;
 }

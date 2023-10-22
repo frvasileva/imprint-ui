@@ -6,7 +6,6 @@ import { API_BASE_URL } from "../../api/settings";
 export const TransactionsPage = () => {
 
     const [data, setData] = useState([] as TransactionObject[]);
-    const [isLoading, setIsLoading] = useState([] as TransactionObject[]);
     useEffect(() => {
         fetch(API_BASE_URL + "/trans/all/list")
             .then((response) => {
@@ -15,13 +14,16 @@ export const TransactionsPage = () => {
             .then((data: any) => {
                 console.log("then data", data);
 
-                const mappedItem = data.map((item: TransactionObject) => {
+                const mappedItem = data.map((item: any) => {
                     const itm = {
                         id: item.id,
                         type: "incoming",
-                        createdOn: new Date(),
                         footPrintPoints: item.footPrintPoints,
                         invoiceRows: item.invoiceRows,
+                        vendor: item.vendor,
+                        totalPrice: item.totalPrice,
+                        createdOn: new Date(item.invoiceDate.join(",")),
+
                     } as TransactionObject;
 
                     return itm;
