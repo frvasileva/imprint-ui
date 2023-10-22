@@ -9,10 +9,12 @@
     margin: 20px auto 50px;
 
     .total-amount {
-      font-size: 40px;
+      font-size: 30px;
     }
 
     &.carbon-footprint-type {
+      font-family: "Raleway", sans-serif;
+
       &.low {
         background-color: #9cb544;
         border-right: 15px solid #72852d;
@@ -39,4 +41,15 @@
     font-size: 30px;
     display: block;
   }
+}
+
+.footprint-info {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.co2-icon {
+  width: 40px;
+  margin-left: 5px;
 }

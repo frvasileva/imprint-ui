@@ -31,7 +31,6 @@ const TransactionItemDetails = () => {
                 setItem(mappedItem);
             });
     }, []);
-    console.log(item)
     if (!item) {
         return (<>Item not found</>)
     }
@@ -47,16 +46,23 @@ const TransactionItemDetails = () => {
 
                 <div className="row">
                     <div className={`row summary-wrapper carbon-footprint-type ${item.type}`}>
-                        <div className="col-8">
+                        <div className="col-6">
                             <div className="transaction-merchant-details">
                                 <span className="merchant-name"> {item.vendor}</span>
                                 <span className="transaction-date"> {item.createdOn?.toDateString()}</span>
                             </div>
                         </div>
-                        <div className="col-4">
+                        <div className="col-3">
                             <span className='total-amount'>
                                 {item.type === "low" ? "-" : "+"}{item.totalPrice} €
-
+                            </span>
+                        </div>
+                        <div className="col-3">
+                            <span className='total-amount'>
+                                <div className="footprint-info">
+                                    {item.footPrintPoints}
+                                    <img src="https://cdn-icons-png.flaticon.com/128/4762/4762153.png?ga=GA1.1.172831833.1696532775&track=ais" alt="logo" className='co2-icon' />
+                                </div>
                             </span>
                         </div>
                     </div>
