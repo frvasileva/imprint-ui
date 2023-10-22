@@ -1,6 +1,6 @@
 export default interface TransactionObject {
   id: string;
-  type: "incoming" | "outgoing";
+  type: "low" | "medium" | "high";
   createdOn: Date;
   footPrintPoints: number;
   vendor: string;

@@ -19,7 +19,7 @@ const TransactionItemDetails = () => {
             .then((itm: any) => {
                 const mappedItem = {
                     id: itm.id,
-                    type: "incoming",
+                    type: itm.type ?? "low",
                     createdOn: new Date(itm.invoiceDate.join(",")),
                     footPrintPoints: itm.footPrintPoints,
                     invoiceRows: itm.invoiceRows,
@@ -46,7 +46,7 @@ const TransactionItemDetails = () => {
                 </div>
 
                 <div className="row">
-                    <div className={`row summary-wrapper carbon-footprint-type ${item.footPrintPoints}`}>
+                    <div className={`row summary-wrapper carbon-footprint-type ${item.type}`}>
                         <div className="col-8">
                             <div className="transaction-merchant-details">
                                 <span className="merchant-name"> {item.vendor}</span>
@@ -55,7 +55,7 @@ const TransactionItemDetails = () => {
                         </div>
                         <div className="col-4">
                             <span className='total-amount'>
-                                {item.type === "outgoing" ? "-" : "+"}{item.totalPrice} €
+                                {item.type === "low" ? "-" : "+"}{item.totalPrice} €
 
                             </span>
                         </div>

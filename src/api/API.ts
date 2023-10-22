@@ -43,7 +43,7 @@ export const API = {
         const mappedItem = data.map((item: TransactionObject) => {
           const itm = {
             id: item.id,
-            type: "incoming",
+            type: "low",
             createdOn: new Date(),
             footPrintPoints: item.footPrintPoints,
             invoiceRows: item.invoiceRows,
@@ -53,6 +53,5 @@ export const API = {
         });
         return mappedItem;
       });
-
   },
 };

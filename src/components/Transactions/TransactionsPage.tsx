@@ -17,7 +17,7 @@ export const TransactionsPage = () => {
                 const mappedItem = data.map((item: any) => {
                     const itm = {
                         id: item.id,
-                        type: "incoming",
+                        type: item.type,
                         footPrintPoints: item.footPrintPoints,
                         invoiceRows: item.invoiceRows,
                         vendor: item.vendor,

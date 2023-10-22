@@ -18,8 +18,8 @@ export default function ProductList(props: { products: InvoiceRows[] }) {
                                 <div className="container">
                                     <div className="row">
                                         <div className="col-6"><span className="product-name">{item.product.name}</span></div>
-                                        <div className="col-3">{item.rowPrice} €</div>
-                                        <div className="col-3">{item.rowCarbonKgs} <Co2Icon /></div>
+                                        <div className="col-3">{item.rowPrice.toFixed(2)} €</div>
+                                        <div className="col-3">{item.rowCarbonKgs.toFixed(2)} <Co2Icon /></div>
                                     </div></div>
                             </Accordion.Header>
                             <Accordion.Body>
