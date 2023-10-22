@@ -9,15 +9,10 @@ export const Home = () => {
             <div className="container">
                 <div className="row">
                     <div className="info-section-wrapper-hello">
-                        <p className="section-title">Fight Climate Change</p>
+                        <p className="section-title">Fight Climate Change now!</p>
 
-                        Calculate your personal carbon footprint and redeem your carbon points!
+                        Imprint calculates your personal carbon footprint and redeem your carbon points!
                         <br />
-                        <br />
-                        With the Imprint app, you can find tips that will help you minimize your carbon footprint.                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ducimus voluptas earum.
-                        <br />
-                        <br />
-                        Support various causes, fund sustainable businesses or connect with some of the world’s most innovative businesses to sell or invest.
                     </div>
                 </div></div>
         </div>
@@ -31,20 +26,27 @@ export const Home = () => {
                                 <p>Track</p>
                                 <div>
                                     Monitor your carbon emissions and lower your environmental impact
+                                    <br/>
+                                    <img src="https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/frontPage/track.png" width="100%"/>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-sm-12">
                                 <p>Invest</p>
                                 <div>
                                     Pick a cause or support emerging sustainable businesses from poor regions
+                                    <br/>
+                                    <img src="https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/frontPage/invest.png" width="100%"/>
                                 </div>
-                                <div className="col-lg-4 col-sm-12">
+                              
+                            </div>
+                            <div className="col-lg-4 col-sm-12">
                                     <p>Challenge</p>
                                     <div>
                                         Pick a quest, reduce your carbon footprint in no time.
+                                        <br/>
+                                        <img src="https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/frontPage/challenge.png" width="100%"/>
                                     </div>
                                 </div>
-                            </div>
                         </div>
                     </div></div>
             </div>

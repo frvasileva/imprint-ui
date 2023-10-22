@@ -13,7 +13,7 @@ export const InitiativesList = () => {
                         {
                             mockInitiatives.map((item: InitiativesCategory) => {
                                 return (
-                                    <div className="col-4">
+                                    <div className="col-lg-4 col-xs-12">
                                         <InitiativeItem initiative={item} key={item.id} />
                                     </div>)
                             })}

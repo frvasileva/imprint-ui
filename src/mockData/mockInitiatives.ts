@@ -4,7 +4,7 @@ export const mockInitiatives: InitiativesCategory[] = [
   {
     id: "1",
     title: "Support a cause",
-    description: "Donate causes close to your heart.",
+    description: "Donate to causes close to your heart.",
     startDate: new Date("01/12/2023"),
     expirationDate: new Date("31/12/2023"),
     type: "cause",
@@ -49,14 +49,14 @@ export const mockInitiatives: InitiativesCategory[] = [
   {
     id: "2",
     title: "Emerging business",
-    description: "Fund sustainable businesses in developing regions",
+    description: "Fund sustainable businesses",
     startDate: new Date("01/12/2023"),
     expirationDate: new Date("31/12/2023"),
     type: "sustainablity",
     coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/initiatives/emergingBusiness.png",
     initiatives: [
       {
-        id: "1",
+        id: "18",
         title: "Support women entrepreneurs",
         description:
           "Empower women in Africa, sustain and grow successful businesses, so they can live to their full potential. ",
@@ -67,7 +67,7 @@ export const mockInitiatives: InitiativesCategory[] = [
         location: "Africa",
       },
       {
-        id: "2",
+        id: "23",
         title: "Belgibaev’s craftsmanship",
         description:
           "Family handmade and organic craftsmanship works from local products since 1992. ",
@@ -78,7 +78,7 @@ export const mockInitiatives: InitiativesCategory[] = [
         location: "Kazakhstan",
       },
       {
-        id: "3",
+        id: "37",
         title: "Mandu House",
         description:
           "A small family owned restaurant for traditional mongolian dumplings. ",
@@ -100,7 +100,7 @@ export const mockInitiatives: InitiativesCategory[] = [
     coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/initiatives/education.jpg",
     initiatives: [
       {
-        id: "1",
+        id: "100",
         title: "Access Drum",
         description:
           "Access Drum is a startup organising courses for software testing, designed specifically for blind people who use a screen reader.",
@@ -111,7 +111,7 @@ export const mockInitiatives: InitiativesCategory[] = [
         location: "Bulgaria",
       },
       {
-        id: "2",
+        id: "200",
         title: "Village school in Oryahovo",
         description:
           "A renovation project for an elementary school that has sat vacant since it closed doors in 1998. The building can accommodate up to 100 students who are currently commuting 40 km a day to attend school in the neighbouring village. ",
@@ -122,7 +122,7 @@ export const mockInitiatives: InitiativesCategory[] = [
         location: "Bulgaria",
       },
       {
-        id: "3",
+        id: "300",
         title: "Green Bus",
         description:
           "Support the funding of an electrical school bus to transport students to and from schools in various villages in one of the poorest regions in Chile. ",

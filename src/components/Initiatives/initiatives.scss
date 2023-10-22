@@ -36,3 +36,11 @@
 .initiative-headline {
   margin-top: 20px;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .inittt-wrapper{
+    margin-bottom: 60px;
+    border-bottom: 1px solid #c1c1c1;
+  }
+}
