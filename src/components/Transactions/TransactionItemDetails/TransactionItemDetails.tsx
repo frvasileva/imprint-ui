@@ -1,17 +1,14 @@
 import { NavLink, useParams } from 'react-router-dom';
-import { mockTransactions } from '../../../mockData/mockedTransactions';
-import TransactionItemDetailsDto from '../../../models/TransactionItemDetailsDto';
 import "./TransactionItemDetails.scss";
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import { useEffect, useState } from 'react';
 import { API_BASE_URL } from '../../../api/settings';
 import TransactionObject from '../../../models/TransactionObject';
+import Co2Icon from '@mui/icons-material/Co2';
+import ProductList from '../../ProductList/ProductList';
+
 const TransactionItemDetails = () => {
     const { id } = useParams()
-    // const item = mockTransactions.find((item: TransactionItemDetailsDto) => {
-    //     return item.transaction.id === id;
-    // });
-
 
     const [item, setItem] = useState({} as TransactionObject);
     useEffect(() => {
@@ -66,9 +63,9 @@ const TransactionItemDetails = () => {
                 </div>
 
                 <h1>Transaction details:</h1>
-                {/* <div className="row">
-                    <ProductList products={item.invoiceDetails.productList} />
-                </div> */}
+                <div className="row">
+                    <ProductList products={item.invoiceRows} />
+                </div>
             </div></div>
     );
 };
