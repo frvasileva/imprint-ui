@@ -6,7 +6,6 @@ export interface InvestItemDto {
   startDate: Date;
   expirationDate: Date;
   coverPhoto: string;
-  location: string;
 }
 
 export interface InvestCategory {
