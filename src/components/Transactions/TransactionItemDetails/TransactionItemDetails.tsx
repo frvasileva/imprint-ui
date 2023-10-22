@@ -4,7 +4,6 @@ import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import { useEffect, useState } from 'react';
 import { API_BASE_URL } from '../../../api/settings';
 import TransactionObject from '../../../models/TransactionObject';
-import Co2Icon from '@mui/icons-material/Co2';
 import ProductList from '../../ProductList/ProductList';
 
 const TransactionItemDetails = () => {
