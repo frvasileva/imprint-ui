@@ -14,9 +14,11 @@ export default function InitiativeItem(props: { initiative: InitiativesCategory 
                     </div>
                     <p className="initiative-description">{initiative.description}
                         <br />
+                        Location:
                         <NavLink to={`/initiatives/details/${initiative.id}`} className="custom-basic-link">
                             See initiatives <ArrowRightAltIcon />
-                        </NavLink></p>
+                        </NavLink>
+                    </p>
 
                 </div>
 

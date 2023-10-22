@@ -13,8 +13,6 @@ export const TransactionsPage = () => {
                 return response.json();
             })
             .then((data: any) => {
-                console.log("then data", data);
-
                 const mappedItem = data.map((item: any) => {
                     const itm = {
                         id: item.id,
