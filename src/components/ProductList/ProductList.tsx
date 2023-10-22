@@ -21,12 +21,17 @@ export default function ProductList(props: { products: InvoiceRows[] }) {
                                         <div className="row">
                                             <div className="col-6">
                                                 <span className="product-name">{item.product.name}</span>
-                                                <br />
+                                            </div>
+                                            <div className="col-3"><span>{item.rowPrice.toFixed(2)} €</span></div>
+                                            <div className="col-3">{item.rowCarbonKgs.toFixed(2)} <Co2Icon /></div>
+                                        </div>
+                                        <div className="row">
+                                            <div className="col-12">
                                                 <span className="product-sector">{item.product.sector}</span>
                                             </div>
-                                            <div className="col-3">{item.rowPrice.toFixed(2)} €</div>
-                                            <div className="col-3">{item.rowCarbonKgs.toFixed(2)} <Co2Icon /></div>
-                                        </div></div>
+
+                                        </div>
+                                    </div>
                                 </Accordion.Header>
                                 <Accordion.Body>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
