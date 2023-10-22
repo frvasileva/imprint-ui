@@ -20,6 +20,7 @@ function Header() {
                         <Nav.Link href="/transactions">Transactions</Nav.Link>
                         <Nav.Link href="/challenges">Challanges</Nav.Link>
                         <Nav.Link href="/initiatives">Initiatives</Nav.Link>
+                        <Nav.Link href="/invest">Invest</Nav.Link>
                     </Nav>
                     <Nav className="ms-auto">
                         <Nav.Link href="/user/register">Register</Nav.Link>

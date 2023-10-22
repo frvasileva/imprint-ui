@@ -10,6 +10,8 @@ import ChallangeDetails from "./components/Challanges/ChallengeDetails";
 import UserDashboard from "./components/user/UserDashboardPage/UserDashboard";
 import { InitiativesList } from "./components/Initiatives/InitiativesList";
 import InitiativeDetails from "./components/Initiatives/InitiativeDetails";
+import InvestDetails from "./components/Invest/InvestDetails";
+import { InvestList } from "./components/Invest/InvestList";
 
 export const Routing = () => {
     return (<Routes>
@@ -20,6 +22,8 @@ export const Routing = () => {
             <Route path="initiatives/details/:id" element={<InitiativeDetails />} />
             <Route path="challenges" element={<ChallangesList />} />
             <Route path="challenges/details/:id" element={<ChallangeDetails />} />
+            <Route path="invest" element={<InvestList />} />
+            <Route path="invest/details/:id" element={<InvestDetails />} />
             <Route path="transactions" element={<TransactionsPage />} />
             <Route path="transactions/details/:id" element={<TransactionItemDetails />} />
             <Route path="/user/login" element={<Login />} />
