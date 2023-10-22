@@ -20,6 +20,7 @@ export const mockInvest: InvestCategory[] = [
         expirationDate: new Date("31/12/2023"),
         type: "cause",
         coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/investments/holky.png",
+        location:""
       },
       {
         id: "3",
@@ -30,6 +31,7 @@ export const mockInvest: InvestCategory[] = [
         expirationDate: new Date("31/12/2023"),
         type: "cause",
         coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/investments/commerzbank.png",
+        location:""
       },
       {
         id: "344",
@@ -40,6 +42,7 @@ export const mockInvest: InvestCategory[] = [
         expirationDate: new Date("31/12/2023"),
         type: "cause",
         coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/investments/diba.png",
+        location:""
       },
     ],
   },
@@ -61,6 +64,7 @@ export const mockInvest: InvestCategory[] = [
         expirationDate: new Date("31/12/2023"),
         type: "cause",
         coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/investments/commerzbank.png",
+        location:""
       },
       {
         id: "23",
@@ -71,6 +75,7 @@ export const mockInvest: InvestCategory[] = [
         expirationDate: new Date("31/12/2023"),
         type: "cause",
         coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/investments/hsbc.png",
+        location:""
       },
       {
         id: "37",
@@ -81,6 +86,7 @@ export const mockInvest: InvestCategory[] = [
         expirationDate: new Date("31/12/2023"),
         type: "cause",
         coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/investments/bankOfAmerica.png",
+        location:""
       },
     ],
   },
@@ -102,6 +108,7 @@ export const mockInvest: InvestCategory[] = [
         expirationDate: new Date("31/12/2023"),
         type: "cause",
         coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/investments/neobank.png",
+        location:""
       },
       {
         id: "200",
@@ -112,6 +119,7 @@ export const mockInvest: InvestCategory[] = [
         expirationDate: new Date("31/12/2023"),
         type: "cause",
         coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/investments/diInv.png",
+        location:""
       },
       {
         id: "300",
@@ -122,6 +130,7 @@ export const mockInvest: InvestCategory[] = [
         expirationDate: new Date("31/12/2023"),
         type: "cause",
         coverPhoto: "https://raw.githubusercontent.com/frvasileva/imprint-ui/main/src/static-content/images/investments/commerzbank.png",
+        location:""
       },
     ],
   },
