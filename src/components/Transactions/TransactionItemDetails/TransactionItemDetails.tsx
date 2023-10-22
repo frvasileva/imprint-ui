@@ -46,18 +46,18 @@ const TransactionItemDetails = () => {
 
                 <div className="row">
                     <div className={`row summary-wrapper carbon-footprint-type ${item.type}`}>
-                        <div className="col-6">
+                        <div className="col-md-6 col-xs-12">
                             <div className="transaction-merchant-details">
                                 <span className="merchant-name"> {item.vendor}</span>
                                 <span className="transaction-date"> {item.createdOn?.toDateString()}</span>
                             </div>
                         </div>
-                        <div className="col-3">
+                        <div className="col-md-3 col-xs-12">
                             <span className='total-amount'>
                                 {item.type === "low" ? "-" : "+"}{item.totalPrice} €
                             </span>
                         </div>
-                        <div className="col-3">
+                        <div className="col-md-3 col-xs-12">
                             <span className='total-amount'>
                                 <div className="footprint-info">
                                     {item.footPrintPoints}

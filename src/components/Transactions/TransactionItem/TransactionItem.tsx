@@ -16,7 +16,7 @@ const TransactionItem: any = (props: { transaction: TransactionObject }) => {
                             <img src={name} width="32px" alt="transaction" />
                         </div>
                     </div>
-                    <div className="col-7">
+                    <div className="col-6">
                         <div className="transaction-merchant-details">
                             <div className="transaction-description">
                                 {props.transaction.vendor}
@@ -28,7 +28,7 @@ const TransactionItem: any = (props: { transaction: TransactionObject }) => {
                     <div className="col-4">
                         <div className="metrics-wrapper">
                             <span className="transaction-C20">
-                                {props.transaction.footPrintPoints}<Co2Icon className="material-c2o-custom" /> <span className="suffix-points">points</span>
+                                {props.transaction.footPrintPoints}<Co2Icon className="material-c2o-custom" />
                             </span>
                             <span className="transaction-amount">{props.transaction.totalPrice} € </span>
                         </div>
