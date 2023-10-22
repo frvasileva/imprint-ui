@@ -1,20 +1,25 @@
 import { Accordion } from 'react-bootstrap';
-import { ProductInfo } from '../../models/TransactionItemDetailsDto';
-
-export default function ProductList(props: { products: ProductInfo[] }) {
+import { InvoiceRows } from '../../models/TransactionObject';
+import Co2Icon from '@mui/icons-material/Co2';
+import "./products.scss";
+export default function ProductList(props: { products: InvoiceRows[] }) {
     const { products } = props;
-
+    console.log("product", products);
+    if (!products || products.length === 0) {
+        return (<>Loading...</>)
+    }
     return (
         <div>
             <Accordion defaultActiveKey="0">
-                {products.map((item: ProductInfo) => {
+                {products.map((item: InvoiceRows) => {
                     return (
                         <Accordion.Item eventKey={item.product.id}>
                             <Accordion.Header>
                                 <div className="container">
                                     <div className="row">
-                                        <div className="col-8">{item.product.name}</div>
-                                        <div className="col-4">99 €</div>
+                                        <div className="col-6"><span className="product-name">{item.product.name}</span></div>
+                                        <div className="col-3">{item.rowPrice} €</div>
+                                        <div className="col-3">{item.rowCarbonKgs} <Co2Icon /></div>
                                     </div></div>
                             </Accordion.Header>
                             <Accordion.Body>
