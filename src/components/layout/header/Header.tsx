@@ -18,7 +18,7 @@ function Header() {
                         <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link href="/user-dashboard">Dashoard</Nav.Link>
                         <Nav.Link href="/transactions">Transactions</Nav.Link>
-                        <Nav.Link href="/challenges">Challanges</Nav.Link>
+                        <Nav.Link href="/challenges">Challenges</Nav.Link>
                         <Nav.Link href="/initiatives">Initiatives</Nav.Link>
                         <Nav.Link href="/invest">Invest</Nav.Link>
                     </Nav>

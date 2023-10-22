@@ -1,7 +1,7 @@
-import ChallangeItemDto from '../../models/ChallangeItemDto';
-import "./challanges.scss";
+import ChallengeItemDto from '../../models/ChallengeItemDto';
+import "./challenges.scss";
 
-export default function ChallangeItem(props: { challenge: ChallangeItemDto }) {
+export default function ChallengeItem(props: { challenge: ChallengeItemDto }) {
     const { challenge } = props;
     return (
         <div className="container challenge-item-wrapper">

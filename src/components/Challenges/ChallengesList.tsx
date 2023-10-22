@@ -1,7 +1,7 @@
 import { Tab, Tabs } from 'react-bootstrap';
-import { mockChallanges } from '../../mockData/mockChallanges';
-import ChallangeItemDto from '../../models/ChallangeItemDto';
-import ChallangeItem from './ChallangeItem';
+import { mockChallanges } from '../../mockData/mockChallenges';
+import ChallangeItemDto from '../../models/ChallengeItemDto';
+import ChallangeItem from './ChallengeItem';
 import { useState } from 'react';
 
 export default function ChallangesList() {

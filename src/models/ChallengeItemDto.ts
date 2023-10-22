@@ -1,4 +1,4 @@
-export default interface ChallangeItemDto {
+export default interface ChallengeItemDto {
   id: string;
   type: "personal" | "group";
   title: string;

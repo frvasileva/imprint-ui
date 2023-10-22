@@ -1,13 +1,13 @@
 import { useParams } from 'react-router-dom';
-import ChallangeItemDto from '../../models/ChallangeItemDto';
+import ChallengeItemDto from '../../models/ChallengeItemDto';
 import imagePath from './../../static-content/images/challenge_public_transport.png';
-import "./challanges.scss";
-import { mockChallanges } from '../../mockData/mockChallanges';
+import "./challenges.scss";
+import { mockChallanges } from '../../mockData/mockChallenges';
 
 export default function ChallangeDetails() {
     const { id } = useParams()
 
-    const item = mockChallanges.find((item: ChallangeItemDto) => {
+    const item = mockChallanges.find((item: ChallengeItemDto) => {
         return item.id === id;
     });
 

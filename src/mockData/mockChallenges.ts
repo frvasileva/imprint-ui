@@ -1,4 +1,4 @@
-import ChallangeItemDto from "../models/ChallangeItemDto";
+import ChallangeItemDto from "../models/ChallengeItemDto";
 
 export const mockChallanges: ChallangeItemDto[] = [
   {
