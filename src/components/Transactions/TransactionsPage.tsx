@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import TransactionItem from "./TransactionItem/TransactionItem";
 import TransactionObject from "../../models/TransactionObject";
 import { API_BASE_URL } from "../../api/settings";
+import Spinner from "../shared/Spinner";
 
 export const TransactionsPage = () => {
 
@@ -33,7 +34,7 @@ export const TransactionsPage = () => {
     }, []);
 
     if (data.length === 0 || typeof data === "undefined")
-        return (<>Loading</>)
+        return (<Spinner />)
     else
         return (
             <div className="container register-wrapper">
